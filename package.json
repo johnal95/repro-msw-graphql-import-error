@@ -1,0 +1,26 @@
+{
+    "name": "repro-msw-graphql-import-error",
+    "version": "1.0.0",
+    "license": "UNLICENSED",
+    "author": "Joao Lopes",
+    "packageManager": "pnpm@9.9.0",
+    "engines": {
+        "node": "20.15.1"
+    },
+    "type": "commonjs",
+    "scripts": {
+        "test": "jest"
+    },
+    "dependencies": {
+        "graphql": "16.9.0",
+        "urql": "4.1.0"
+    },
+    "devDependencies": {
+        "@types/jest": "29.5.12",
+        "jest": "29.7.0",
+        "msw": "2.4.1",
+        "ts-jest": "29.2.5",
+        "ts-node": "10.9.2",
+        "typescript": "5.5.4"
+    }
+}
