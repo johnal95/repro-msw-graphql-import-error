@@ -14,10 +14,18 @@ describe("example", () => {
     });
 
     it("should", async () => {
-        server.use(graphql.query("ListPosts", () => HttpResponse.json({ data: { posts: [] } })));
+        server.use(
+            graphql.query("GetPost", () =>
+                HttpResponse.json({ data: { post: { id: "1", title: "foo" } } })
+            )
+        );
 
         const result = await getPosts();
 
-        expect(result).toEqual({ posts: [] });
+        expect(result).toEqual({
+            data: {
+                post: { id: "1", title: "foo" },
+            },
+        });
     });
 });

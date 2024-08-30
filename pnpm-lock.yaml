@@ -11,9 +11,6 @@ importers:
       graphql:
         specifier: 16.9.0
         version: 16.9.0
-      urql:
-        specifier: 4.1.0
-        version: 4.1.0(@urql/core@5.0.6(graphql@16.9.0))(react@18.3.1)
     devDependencies:
       '@types/jest':
         specifier: 29.5.12
@@ -38,14 +35,6 @@ importers:
         version: 5.5.4
 
 packages:
-
-  '@0no-co/graphql.web@1.0.8':
-    resolution: {integrity: sha512-8BG6woLtDMvXB9Ajb/uE+Zr/U7y4qJ3upXi0JQHZmsKUJa7HjF/gFvmL2f3/mSmfZoQGRr9VoY97LCX2uaFMzA==}
-    peerDependencies:
-      graphql: ^14.0.0 || ^15.0.0 || ^16.0.0
-    peerDependenciesMeta:
-      graphql:
-        optional: true
 
   '@ampproject/remapping@2.3.0':
     resolution: {integrity: sha512-30iZtAPgz+LTIYoeivqYo853f02jBYSd5uGnGpkFV0M3xOt9aN73erkgYAmZU43x4VfqcnLxW9Kpg3R5LC4YYw==}
@@ -434,9 +423,6 @@ packages:
 
   '@types/yargs@17.0.33':
     resolution: {integrity: sha512-WpxBCKWPLr4xSsHgz511rFJAM+wS28w2zEO1QDNY5zM/S8ok70NNfztH0xwhqKyaK0OHCbN98LDAZuy1ctxDkA==}
-
-  '@urql/core@5.0.6':
-    resolution: {integrity: sha512-38rgSDqVNihFDauw1Pm9V7XLWIKuK8V9CKgrUF7/xEKinze8ENKP1ZeBhkG+dxWzJan7CHK+SLl46kAdvZwIlA==}
 
   acorn-walk@8.3.3:
     resolution: {integrity: sha512-MxXdReSRhGO7VlFe1bRG/oI7/mdLV9B9JJT0N8vZOhF7gFRR5l3M8W9G8JxmKV+JC5mGqJ0QvqfSOLsCPa4nUw==}
@@ -1023,10 +1009,6 @@ packages:
   lodash.memoize@4.1.2:
     resolution: {integrity: sha512-t7j+NzmgnQzTAYXcsHYLgimltOV1MXHtlOWf6GjL9Kj8GK5FInw5JotxvbOs+IvV1/Dzo04/fCGfLVs7aXb4Ag==}
 
-  loose-envify@1.4.0:
-    resolution: {integrity: sha512-lyuxPGr/Wfhrlem2CL/UcnUc1zcqKAImBDzukY7Y5F/yQiNdko6+fRLevlw1HgMySw7f611UIY408EtxRSoK3Q==}
-    hasBin: true
-
   lru-cache@5.1.1:
     resolution: {integrity: sha512-KpNARQA3Iwv+jTA0utUVVbrh+Jlrr1Fv0e56GGzAFOXN7dk/FviaDW8LHmK52DlcH4WP2n6gI8vN1aesBFgo9w==}
 
@@ -1181,10 +1163,6 @@ packages:
 
   react-is@18.3.1:
     resolution: {integrity: sha512-/LLMVyas0ljjAtoYiPqYiL8VWXzUUdThrmU5+n20DZv+a+ClRoevUzw5JxU+Ieh5/c87ytoTBV9G1FiKfNJdmg==}
-
-  react@18.3.1:
-    resolution: {integrity: sha512-wS+hAgJShR0KhEvPJArfuPVN1+Hz1t0Y6n5jLrGQbkb4urgPE/0Rve+1kMB1v/oWgHgm4WIcV+i7F2pTVj+2iQ==}
-    engines: {node: '>=0.10.0'}
 
   require-directory@2.1.1:
     resolution: {integrity: sha512-fGxEI7+wsG9xrvdjsrlmL22OMTTiHRwAMroiEeMgq8gzoLC/PQr7RsRDSTLUg/bZAZtF+TVIkHc6/4RIKrui+Q==}
@@ -1391,12 +1369,6 @@ packages:
   url-parse@1.5.10:
     resolution: {integrity: sha512-WypcfiRhfeUP9vvF0j6rw0J3hrWrw6iZv3+22h6iRMJ/8z1Tj6XfLP4DsUix5MhMPnXpiHDoKyoZ/bdCkwBCiQ==}
 
-  urql@4.1.0:
-    resolution: {integrity: sha512-NfbfTvxy1sM89EQAJWm89qJZihUWk7BSMfrWgfljFXLOf+e7RK7DtV/Tbg2+82HnCG2x3LcEOJenxiFSYEC+bw==}
-    peerDependencies:
-      '@urql/core': ^5.0.0
-      react: '>= 16.8.0'
-
   v8-compile-cache-lib@3.0.1:
     resolution: {integrity: sha512-wa7YjyUGfNZngI/vtK0UHAN+lgDCxBPCylVXGp0zu59Fz5aiGtNXaq3DhIov063MorB+VfufLh3JlF2KdTK3xg==}
 
@@ -1411,9 +1383,6 @@ packages:
     resolution: {integrity: sha512-BLI3Tl1TW3Pvl70l3yq3Y64i+awpwXqsGBYWkkqMtnbXgrMD+yj7rhW0kuEDxzJaYXGjEW5ogapKNMEKNMjibA==}
     engines: {node: '>= 8'}
     hasBin: true
-
-  wonka@6.3.4:
-    resolution: {integrity: sha512-CjpbqNtBGNAeyNS/9W6q3kSkKE52+FjIj7AkFlLr11s/VWGUu6a2CdYSdGxocIhIVjaW/zchesBQUKPVU69Cqg==}
 
   wrap-ansi@6.2.0:
     resolution: {integrity: sha512-r6lPcBGxZXlIcymEu7InxDMhdW0KDxpLgoFLcguasxCaJ/SOIZwINatK9KY/tf+ZrlywOKU0UDj3ATXUBfxJXA==}
@@ -1458,10 +1427,6 @@ packages:
     engines: {node: '>=18'}
 
 snapshots:
-
-  '@0no-co/graphql.web@1.0.8(graphql@16.9.0)':
-    optionalDependencies:
-      graphql: 16.9.0
 
   '@ampproject/remapping@2.3.0':
     dependencies:
@@ -2010,13 +1975,6 @@ snapshots:
   '@types/yargs@17.0.33':
     dependencies:
       '@types/yargs-parser': 21.0.3
-
-  '@urql/core@5.0.6(graphql@16.9.0)':
-    dependencies:
-      '@0no-co/graphql.web': 1.0.8(graphql@16.9.0)
-      wonka: 6.3.4
-    transitivePeerDependencies:
-      - graphql
 
   acorn-walk@8.3.3:
     dependencies:
@@ -2755,10 +2713,6 @@ snapshots:
 
   lodash.memoize@4.1.2: {}
 
-  loose-envify@1.4.0:
-    dependencies:
-      js-tokens: 4.0.0
-
   lru-cache@5.1.1:
     dependencies:
       yallist: 3.1.1
@@ -2899,10 +2853,6 @@ snapshots:
   querystringify@2.2.0: {}
 
   react-is@18.3.1: {}
-
-  react@18.3.1:
-    dependencies:
-      loose-envify: 1.4.0
 
   require-directory@2.1.1: {}
 
@@ -3073,12 +3023,6 @@ snapshots:
       querystringify: 2.2.0
       requires-port: 1.0.0
 
-  urql@4.1.0(@urql/core@5.0.6(graphql@16.9.0))(react@18.3.1):
-    dependencies:
-      '@urql/core': 5.0.6(graphql@16.9.0)
-      react: 18.3.1
-      wonka: 6.3.4
-
   v8-compile-cache-lib@3.0.1: {}
 
   v8-to-istanbul@9.3.0:
@@ -3094,8 +3038,6 @@ snapshots:
   which@2.0.2:
     dependencies:
       isexe: 2.0.0
-
-  wonka@6.3.4: {}
 
   wrap-ansi@6.2.0:
     dependencies:

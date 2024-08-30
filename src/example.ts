@@ -1,20 +1,20 @@
-import { Client, cacheExchange, fetchExchange, gql } from "urql";
-
-const client = new Client({
-    url: "http://localhost:42069/graphql",
-    exchanges: [cacheExchange, fetchExchange],
-});
-
-const GET_POSTS_QUERY = gql`
-    query ListPosts {
-        posts {
-            id
-            title
-        }
+const query = `
+query GetPost {
+    post {
+        id
+        title
     }
+}
 `;
 
 export async function getPosts() {
-    const result = await client.query(GET_POSTS_QUERY, {});
-    return result.data;
+    const response = await fetch("https://api.example.com/graphql", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ query }),
+    });
+
+    return response.json();
 }
