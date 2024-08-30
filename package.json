@@ -9,6 +9,7 @@
     },
     "type": "commonjs",
     "scripts": {
+        "postprocess-msw": "ts-node ./scripts/postprocess-msw",
         "test": "jest"
     },
     "dependencies": {
@@ -17,6 +18,7 @@
     },
     "devDependencies": {
         "@types/jest": "29.5.12",
+        "@types/node": "20",
         "jest": "29.7.0",
         "msw": "2.4.1",
         "ts-jest": "29.2.5",
