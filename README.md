@@ -6,8 +6,14 @@
 pnpm install
 ```
 
-2. Run tests
+2. Run GraphQL tests
 
 ```zsh
-pnpm test
+pnpm gql
+```
+
+3. Run REST tests
+
+```zsh
+pnpm rest
 ```

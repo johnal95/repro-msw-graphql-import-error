@@ -1,6 +1,10 @@
 import { setupServer } from "msw/node";
-import { HttpResponse, graphql } from "msw";
-import { getPosts } from "./example";
+import { HttpResponse, http } from "msw";
+
+export async function getPosts() {
+    const response = await fetch("https://api.example.com/posts/1");
+    return response.json();
+}
 
 const server = setupServer();
 
@@ -15,17 +19,13 @@ describe("example", () => {
 
     it("should", async () => {
         server.use(
-            graphql.query("GetPost", () =>
-                HttpResponse.json({ data: { post: { id: "1", title: "foo" } } })
+            http.get("https://api.example.com/posts/1", () =>
+                HttpResponse.json({ id: "1", title: "foo" })
             )
         );
 
         const result = await getPosts();
 
-        expect(result).toEqual({
-            data: {
-                post: { id: "1", title: "foo" },
-            },
-        });
+        expect(result).toEqual({ id: "1", title: "foo" });
     });
 });

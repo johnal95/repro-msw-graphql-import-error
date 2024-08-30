@@ -10,7 +10,8 @@
     "type": "commonjs",
     "scripts": {
         "postprocess-msw": "ts-node ./scripts/postprocess-msw",
-        "test": "jest"
+        "gql": "jest gql",
+        "rest": "jest rest"
     },
     "dependencies": {
         "graphql": "16.9.0"
